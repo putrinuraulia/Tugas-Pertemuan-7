@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic Skincare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body.light {
+      background-color: #ffe6ee;
+      color: #000;
+    }
+    body.dark {
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+    .card-custom {
+      background-color: #fff0f5;
+      border: none;
+      transition: 0.3s;
+    }
+    .dark .card-custom {
+      background-color: #333;
+      color: #fff;
+    }
+    .card-title {
+      color: #d63384;
+      font-weight: bold;
+    }
+    .section-title {
+      color: #d63384;
+      font-weight: 700;
+    }
+    .gallery-img {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="light">
+
+  <nav class="navbar navbar-expand-lg navbar-light px-3 bg-white shadow-sm">
+    <span class="navbar-brand fw-bold">NIM : A18202400139</span>
+    <div class="ms-auto">
+      <button class="btn btn-outline-dark me-2" onclick="setTheme('dark')" title="Dark Mode"><i class="bi bi-moon-fill"></i></button>
+      <button class="btn btn-outline-secondary" onclick="setTheme('light')" title="Light Mode"><i class="bi bi-sun-fill"></i></button>
+    </div>
+  </nav>
+
+  <div class="container text-center py-5">
+    <h2 class="section-title">Kenapa Harus Paham Basic Skincare?</h2>
+    <p class="lead">Merawat kulit sesuai jenisnya akan membuat hasil skincare lebih optimal!</p>
+    <img src="img/skincare 1.png" class="card-img-top mx-auto" style="width: 300px;">
+    <p id="tanggal" class="fw-bold mt-2"></p>
+    <p id="jam" class="fs-4 fw-semibold"></p>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="card card-custom text-center p-3 h-100">
+          <img src="img/Kulit Normal.png" class="card-img-top mx-auto" style="width: 120px;">
+          <div class="card-body">
+            <h5 class="card-title">Kulit Normal</h5>
+            <p class="card-text">Kulit seimbang, tidak terlalu berminyak atau kering.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-custom text-center p-3 h-100">
+          <img src="img/Kulit Berminyak.png" class="card-img-top mx-auto" style="width: 120px;">
+          <div class="card-body">
+            <h5 class="card-title">Kulit Berminyak</h5>
+            <p class="card-text">Cenderung mengilap dan berjerawat, terutama di T-zone.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-custom text-center p-3 h-100">
+          <img src="img/Kulit Kering.png" class="card-img-top mx-auto" style="width: 120px;">
+          <div class="card-body">
+            <h5 class="card-title">Kulit Kering</h5>
+            <p class="card-text">Kulit terasa kasar, bersisik, atau ketarik setelah cuci muka.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-custom text-center p-3 h-100">
+          <img src="img/Kulit Kombinasi.png" class="card-img-top mx-auto" style="width: 120px;">
+          <div class="card-body">
+            <h5 class="card-title">Kulit Kombinasi</h5>
+            <p class="card-text">Kombinasi berminyak di T-zone dan kering di area lain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card card-custom p-3">
+          <h5 class="card-title">Kulit Normal</h5>
+          <p class="card-text">Biasanya tidak memiliki masalah besar, cocok hampir dengan semua jenis produk skincare.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-custom p-3">
+          <h5 class="card-title">Kulit Berminyak</h5>
+          <p class="card-text">Gunakan produk berbahan dasar air atau gel untuk mengontrol minyak dan mencegah jerawat.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-custom p-3">
+          <h5 class="card-title">Kulit Kering</h5>
+          <p class="card-text">Gunakan pelembap yang mengandung hyaluronic acid dan hindari sabun yang keras.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card card-custom p-3">
+          <h5 class="card-title">Kulit Kombinasi</h5>
+          <p class="card-text">Perlu perawatan ganda: area berminyak pakai produk ringan, area kering pakai pelembap.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5">
+    <h3 class="section-title text-center mb-4">Rekomendasi Skincare</h3>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <img src="img/Skincare 2.png" class="img-fluid gallery-img rounded shadow-sm" alt="Skincare 1">
+      </div>
+      <div class="col-md-4">
+        <img src="img/Skincare 3.png" class="img-fluid gallery-img rounded shadow-sm" alt="Skincare 2">
+      </div>
+      <div class="col-md-4">
+        <img src="img/Skincare 4.png" class="img-fluid gallery-img rounded shadow-sm" alt="Skincare 3">
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="text-center border-top pt-4 pb-4 mt-5">
+    <p class="mb-2 fw-semibold">Putri Nur Aulia</p>
+    <a href="https://instagram.com/puteri.naa" target="_blank" class="me-3 text-decoration-none text-dark">
+      <i class="bi bi-instagram"></i> Instagram
+    </a>
+    <a href="https://wa.me/62895605950788" target="_blank" class="text-decoration-none text-dark">
+      <i class="bi bi-whatsapp"></i> WhatsApp
+    </a>
+  </footer>
+
+  <script>
+    function setTheme(mode) {
+      document.body.className = mode;
+    }
+    function updateClock() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById("tanggal").textContent = now.toLocaleDateString("id-ID", options);
+      const jam = String(now.getHours()).padStart(2, '0');
+      const menit = String(now.getMinutes()).padStart(2, '0');
+      const detik = String(now.getSeconds()).padStart(2, '0');
+      document.getElementById("jam").textContent = jam + ":" + menit + ":" + detik;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+</body>
+</html>
